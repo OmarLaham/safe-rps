@@ -42,74 +42,184 @@
   <![endif]-->
    
    
-    
+    <div class="container">
 
-    <div id="pipeline-wrapper">
+        <div class="row">
 
-        <div class="alert alert-success pipeline-step" role="alert">
-            <span class="badge bg-dark text-light">Inputs: </span>
-            <span class="badge bg-light">scRNA-Seq data (.rds)</span>
-            <hr>
-            <p class="font-weight-bold">Preprocessing</p>
-            <ul>
-                <li>Filtering</li>
-                <li>Doublet removal</li>
-                <li>Batch effect removal</li>
-            </ul>
-            <hr>
-            <span class="badge bg-dark text-light">Outputs: </span>
-            <span class="badge bg-light">Preprocessed Seurat object</span>
+            <!-- ======== pipeline-wrapper ======= -->
+            <div class="col-6">
+                <h3>misc:</h3>
+                <ul>
+                    <li>Set idents</li>
+                    <li>Merge data (Merge 2 Seurat objects)</li>
+                    <li>Add meta data
+                        <ul>
+                            <li>By cell ID</li>
+                            <li>By Ident</li>
+                            <li>By other meta data</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Trajectory Analysis:</h3>
+                <ul>
+                    <li>Routine trajectory analysis</li>
+                    <li>Find precursor cells</li>
+                </ul>
+
+                <h3>Post-DEA analysis:</h3>
+                <ul>
+                    <li>Pathway analysis</li>
+                    <li>GO Enrichment analysis</li>
+                        <ul>
+                            <li>Biological process</li>
+                            <li>Cellular component</li>
+                            <li>Molecular function</li>
+                        </ul>
+                </ul>
+
+                <h3>Advanced:</h3>
+                <ul>
+                    <li>Cell-Cell Communication</li>
+                </ul>
+
+            </div>
+
+            <!-- ======== pipeline-wrapper ======= -->
+
+            <div id="pipeline-wrapper" class="col-6">
+
+                <div class="alert alert-success pipeline-step" role="alert">
+                    <span class="badge bg-dark text-light">Inputs: </span>
+                    <span class="badge bg-light">species</span>
+                    <span class="badge bg-light">scRNA-Seq data file(s) (.rds)</span>
+                    <hr>
+                    <p class="font-weight-bold">Preprocessing</p>
+                    <ul>
+                        <li>Filtering</li>
+                        <li>Doublet removal</li>
+                        <li>Normalization</li>
+                        <li>Batch effect removal</li>
+                    </ul>
+                    <hr>
+                    <span class="badge bg-dark text-light">Outputs: </span>
+                    <span class="badge bg-light">Preprocessed Seurat object</span>
+                </div>
+
+                <div class="pipeline-sep text-center">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+
+                <!-- ===================== -->
+
+                <div class="alert alert-success pipeline-step" role="alert">
+                    <span class="badge bg-dark text-light">Inputs: </span>
+                    <span class="badge bg-light">scRNA-Seq data (.rds)</span>
+                    <hr>
+                    <p class="font-weight-bold">Dimensionality Reduction</p>
+                    <ul>
+                        <li>PCA & Elbow plot</li>
+                        <li>Set nDims</li>
+                        <li>UMAP & tSNE plots</li>
+                    </ul>
+                    <hr>
+                    <span class="badge bg-dark text-light">Outputs: </span>
+                    <span class="badge bg-light">Seurat object with UMAP & tSNE data included</span>
+                </div>
+
+                <div class="pipeline-sep text-center">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+
+                <!-- ===================== -->
+
+                <div class="alert alert-success pipeline-step" role="alert">
+                    <span class="badge bg-dark text-light">Inputs: </span>
+                    <span class="badge bg-light">Seurat object with UMAP/tSNE data included</span>
+                    <span class="badge bg-light">nDims</span>
+                    <span class="badge bg-light">Clustering Resolution</span>
+                    <hr>
+                    <p class="font-weight-bold">Clustering & Finding Markers</p>
+                    <ul>
+                        <li>Clustered cells</li>
+                        <li>Clusters' DEGs</li>
+                        <li>Clustering UMAP/tSNE plots</li>
+                    </ul>
+                    <hr>
+                    <span class="badge bg-dark text-light">Outputs: </span>
+                    <span class="badge bg-light">Seurat object clusters assigned to cells</span>
+                    <span class="badge bg-light">Markers of clusters</span>
+                    <span class="badge bg-light">DEA results on each cluster</span>
+                    <span class="badge bg-light">Volcan & MA plots for DEA results</span>
+                </div>
+
+                <div class="pipeline-sep text-center">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+
+
+                <!-- ===================== -->
+
+                <div class="alert alert-dark pipeline-step" role="alert">
+                    <span class="badge bg-dark text-light">Inputs: </span>
+                    <span class="badge bg-light">DEA results on each cluster</span>
+                    <span class="badge bg-light">Trajectory analysis settings</span>
+                    <hr>
+                    <p class="font-weight-bold">Trajectory Analysis <span class="badge bg-warning text-dark">EXTENSION <i class="fa fa-cog" aria-hidden="true"></i></span></p>
+                    <ul>
+                        <li>Root cells automatically detected</li>
+                        <li>Pseudotime trajectory analysis</li>
+                    </ul>
+                    <hr>
+                    <span class="badge bg-dark text-light">Outputs: </span>
+                    <span class="badge bg-light">Trajectory analysis UMAP with nodes and pseudotime</span>
+                </div>
+
+                <div class="pipeline-sep text-center">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+
+                <!-- ===================== -->
+
+                <div class="alert alert-success pipeline-step" role="alert">
+                    <span class="badge bg-dark text-light">Inputs: </span>
+                    <span class="badge bg-light">DEA results of clusters</span>
+                    <hr>
+                    <p class="font-weight-bold">Pathway analysis</p>
+                    <ul>
+                        <li>EnrichR is used for this analysis</li>
+                    </ul>
+                    <hr>
+                    <span class="badge bg-dark text-light">Outputs: </span>
+                    <span class="badge bg-light">Enrichment analysis results & plots for each cluster</span>
+                </div>
+
+                <div class="pipeline-sep text-center">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                </div>
+
+                <!-- ===================== -->
+
+                <div class="alert alert-dark pipeline-step" role="alert">
+                    <span class="badge bg-dark text-light">Inputs: </span>
+                    <span class="badge bg-light">DEA results on each cluster</span>
+                    <span class="badge bg-light">Trajectory analysis settings</span>
+                    <hr>
+                    <p class="font-weight-bold">Cell-Cell Communication <span class="badge bg-warning text-dark">EXTENSION <i class="fa fa-cog" aria-hidden="true"></i></span></p>
+                    <ul>
+                        <li>Root cells automatically detected</li>
+                        <li>Pseudotime trajectory analysis</li>
+                    </ul>
+                    <hr>
+                    <span class="badge bg-dark text-light">Outputs: </span>
+                    <span class="badge bg-light">Aggregated cell-cell communication network</span>
+                    <span class="badge bg-light">Single and overall visualization for the aggregated cell-cell communication network</span>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="pipeline-sep text-center">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-
-        <!-- ===================== -->
-
-        <div class="alert alert-success pipeline-step" role="alert">
-            <span class="badge bg-dark text-light">Inputs: </span>
-            <span class="badge bg-light">scRNA-Seq data (.rds)</span>
-            <hr>
-            <p class="font-weight-bold">Dimensionality Reduction</p>
-            <ul>
-                <li>PCA & Elbow plot</li>
-                <li>Set nDims</li>
-                <li>UMAP & tSNE plots</li>
-            </ul>
-            <hr>
-            <span class="badge bg-dark text-light">Outputs: </span>
-            <span class="badge bg-light">Seurat object with UMAP & tSNE data included</span>
-        </div>
-
-        <div class="pipeline-sep text-center">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-
-        <!-- ===================== -->
-
-        <div class="alert alert-success pipeline-step" role="alert">
-            <span class="badge bg-dark text-light">Inputs: </span>
-            <span class="badge bg-light">Seurat object with UMAP/tSNE data included</span>
-            <span class="badge bg-light">nDims</span>
-            <span class="badge bg-light">Clustering Resolution</span>
-            <hr>
-            <p class="font-weight-bold">Clustering</p>
-            <ul>
-                <li>Clustered cells</li>
-                <li>Clustering UMAP/tSNE plots</li>
-            </ul>
-            <hr>
-            <span class="badge bg-dark text-light">Outputs: </span>
-            <span class="badge bg-light">Seurat object with seurat_cluster added to the meta data of each cell</span>
-        </div>
-
-        <div class="pipeline-sep text-center">
-            <i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-
     </div>
-
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
