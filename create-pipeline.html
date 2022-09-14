@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>SAFE - RPs | Create Pipeline</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/create-pipeline.css">
+        
+    <!--====== Font Awesome CSS ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+        
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <!--<link rel="stylesheet" href="assets/css/default.css">-->
+    
+    <!--====== Style CSS ======-->
+    <!--<link rel="stylesheet" href="assets/css/style.css">-->
+    
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+   
+    
+
+    <div id="pipeline-wrapper">
+
+        <div class="alert alert-success pipeline-step" role="alert">
+            <span class="badge bg-dark text-light">Inputs: </span>
+            <span class="badge bg-light">scRNA-Seq data (.rds)</span>
+            <hr>
+            <p class="font-weight-bold">Preprocessing</p>
+            <ul>
+                <li>Filtering</li>
+                <li>Doublet removal</li>
+                <li>Batch effect removal</li>
+            </ul>
+            <hr>
+            <span class="badge bg-dark text-light">Outputs: </span>
+            <span class="badge bg-light">Preprocessed Seurat object</span>
+        </div>
+
+        <div class="pipeline-sep text-center">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </div>
+
+        <!-- ===================== -->
+
+        <div class="alert alert-success pipeline-step" role="alert">
+            <span class="badge bg-dark text-light">Inputs: </span>
+            <span class="badge bg-light">scRNA-Seq data (.rds)</span>
+            <hr>
+            <p class="font-weight-bold">Dimensionality Reduction</p>
+            <ul>
+                <li>PCA & Elbow plot</li>
+                <li>Set nDims</li>
+                <li>UMAP & tSNE plots</li>
+            </ul>
+            <hr>
+            <span class="badge bg-dark text-light">Outputs: </span>
+            <span class="badge bg-light">Seurat object with UMAP & tSNE data included</span>
+        </div>
+
+        <div class="pipeline-sep text-center">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </div>
+
+        <!-- ===================== -->
+
+        <div class="alert alert-success pipeline-step" role="alert">
+            <span class="badge bg-dark text-light">Inputs: </span>
+            <span class="badge bg-light">Seurat object with UMAP/tSNE data included</span>
+            <span class="badge bg-light">nDims</span>
+            <span class="badge bg-light">Clustering Resolution</span>
+            <hr>
+            <p class="font-weight-bold">Clustering</p>
+            <ul>
+                <li>Clustered cells</li>
+                <li>Clustering UMAP/tSNE plots</li>
+            </ul>
+            <hr>
+            <span class="badge bg-dark text-light">Outputs: </span>
+            <span class="badge bg-light">Seurat object with seurat_cluster added to the meta data of each cell</span>
+        </div>
+
+        <div class="pipeline-sep text-center">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== Custom js =========-->
+    <script src="assets/js/create-pipeline.js"></script>
+
+    
+    
+</body>
+
+</html>

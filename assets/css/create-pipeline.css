@@ -1,0 +1,15 @@
+#pipeline-wrapper {
+    padding: 30px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7f4f4;
+}
+
+.pipeline-step {
+    margin-bottom: 10px;
+}
+
+.pipeline-sep {
+    margin-bottom: 10px;
+}
