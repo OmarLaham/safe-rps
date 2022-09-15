@@ -11,5 +11,13 @@
 }
 
 .pipeline-sep {
-    margin-bottom: 10px;
+    margin-bottom: 10px;;
+}
+
+.pipline-step-btns button {
+    font-size: 11px;
+    height: 21px;
+    min-width: 20px;
+    padding: 2px;
+    border-width: 1px;
 }
