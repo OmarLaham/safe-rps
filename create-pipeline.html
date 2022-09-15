@@ -50,7 +50,7 @@
 
             <div id="pipeline-wrapper" class="col-6">
 
-                <div class="pipeline-step-card">
+                <div class="pipeline-step-card  step-core">
 
                     <div class="pipeline-step">
 
@@ -58,19 +58,60 @@
                             <span class="badge bg-dark text-light">Inputs: </span>
                             <span class="badge bg-light">species</span>
                             <span class="badge bg-light">scRNA-Seq data file(s) (.rds)</span>
+                            <div class="pipeline-step-dependecies">
+                                <span class="badge bg-dark text-light">Dependecies: </span>
+                                <span class="badge bg-light">None</span>
+                            </div>
                             <hr>
 
                             <!-- pipe-line step buttons -->
                             <div class="pipline-step-btns text-right">
-                                <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Add Extension</button>
+                                <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
                                 <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                                <button class="btn-step-down btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                                <button class="btn-step-up btn-sm"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                                <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
                             </div>
                             <!-- / pipe-line step buttons -->
 
-                            <p class="font-weight-bold">Preprocessing</p>
+                            <p class="font-weight-bold">Upload Data<br /><span class="badge bg-dark text-light">Core <i class="fa fa-cube" aria-hidden="true"></i></span></p>
+                            <ul>
+                                <li>Files for single or multiple analysis</li>
+                                <li>Example file extension: .rds</li>
+                            </ul>
+                            <hr>
+                            <span class="badge bg-dark text-light">Outputs: </span>
+                            <span class="badge bg-light">Encrypted data uploaded to pipeline</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===================== -->
+
+                <div class="pipeline-step-card step-core">
+
+                    <div class="pipeline-sep text-center">
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="pipeline-step">
+
+                        <div class="alert alert-success pipeline-step" role="alert">
+                            <span class="badge bg-dark text-light">Inputs: </span>
+                            <span class="badge bg-light">Decryption key</span>
+                            <span class="badge bg-light">Decrypted uploaded data</span>
+                            <hr>
+
+                            <!-- pipe-line step buttons -->
+                            <div class="pipline-step-btns text-right">
+                                <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
+                                <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
+                                <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
+                            </div>
+                            <!-- / pipe-line step buttons -->
+
+                            <p class="font-weight-bold">Preprocessing<br /><span class="badge bg-dark text-light">Core <i class="fa fa-cube" aria-hidden="true"></i></span></p>
                             <ul>
                                 <li>Filtering</li>
                                 <li>Doublet removal</li>
@@ -89,7 +130,7 @@
 
                 <!-- ===================== -->
 
-                <div class="pipeline-step-card">
+                <div class="pipeline-step-card step-core">
 
                     <div class="pipeline-sep text-center">
                         <i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -98,20 +139,18 @@
                     <div class="alert alert-success pipeline-step" role="alert">
 
                         <span class="badge bg-dark text-light">Inputs: </span>
-                        <span class="badge bg-light">scRNA-Seq data (.rds)</span>
+                        <span class="badge bg-light">Preprocessed Seurat object</span>
                         <hr>
 
                         <!-- pipe-line step buttons -->
                         <div class="pipline-step-btns text-right">
-                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Add Extension</button>
+                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
                             <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                            <button class="btn-step-down btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                            <button class="btn-step-up btn-sm"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
                         </div>
                         <!-- / pipe-line step buttons -->
 
-                        <p class="font-weight-bold">Dimensionality Reduction</p>
+                        <p class="font-weight-bold">Dimensionality Reduction<br /><span class="badge bg-dark text-light">Core <i class="fa fa-cube" aria-hidden="true"></i></span></p>
                         <ul>
                             <li>PCA & Elbow plot</li>
                             <li>Set nDims</li>
@@ -127,7 +166,7 @@
 
                 <!-- ===================== -->
 
-                <div class="pipeline-step-card">
+                <div class="pipeline-step-card step-core">
 
                     <div class="pipeline-sep text-center">
                         <i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -142,15 +181,13 @@
 
                         <!-- pipe-line step buttons -->
                         <div class="pipline-step-btns text-right">
-                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Add Extension</button>
+                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
                             <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                            <button class="btn-step-down btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                            <button class="btn-step-up btn-sm"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
                         </div>
                         <!-- / pipe-line step buttons -->
 
-                        <p class="font-weight-bold">Clustering & Finding Markers</p>
+                        <p class="font-weight-bold">Clustering & Finding Markers<br /><span class="badge bg-dark text-light">Core <i class="fa fa-cube" aria-hidden="true"></i></span></p>
                         <ul>
                             <li>Clustered cells</li>
                             <li>Clusters' DEGs</li>
@@ -168,7 +205,7 @@
 
                 <!-- ===================== -->
 
-                <div class="pipeline-step-card">
+                <div class="pipeline-step-card step-extension">
 
                     <div class="pipeline-sep text-center">
                         <i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -177,16 +214,19 @@
                     <div class="alert alert-dark pipeline-step" role="alert">
                         <span class="badge bg-dark text-light">Inputs: </span>
                         <span class="badge bg-light">DEA results on each cluster</span>
-                        <span class="badge bg-light">Trajectory analysis settings</span>
+
+                        <div class="step-dependecies">
+                            <span class="badge bg-dark text-light">Dependecies: </span>
+                            <span class="badge bg-light">Clustering & Finding Markers</span>
+                        </div>
+
                         <hr>
 
                         <!-- pipe-line step buttons -->
                         <div class="pipline-step-btns text-right">
-                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Add Extension</button>
+                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
                             <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                            <button class="btn-step-down btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                            <button class="btn-step-up btn-sm"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
                         </div>
                         <!-- / pipe-line step buttons -->
 
@@ -204,41 +244,7 @@
 
                 <!-- ===================== -->
 
-                <div class="pipeline-step-card">
-
-                    <div class="pipeline-sep text-center">
-                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                    </div>
-
-                    <div class="alert alert-success pipeline-step" role="alert">
-                        <span class="badge bg-dark text-light">Inputs: </span>
-                        <span class="badge bg-light">DEA results of clusters</span>
-                        <hr>
-
-                        <!-- pipe-line step buttons -->
-                        <div class="pipline-step-btns text-right">
-                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Add Extension</button>
-                            <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                            <button class="btn-step-down btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                            <button class="btn-step-up btn-sm"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
-                        </div>
-                        <!-- / pipe-line step buttons -->
-
-                        <p class="font-weight-bold">Pathway analysis</p>
-                        <ul>
-                            <li>EnrichR is used for this analysis</li>
-                        </ul>
-                        <hr>
-                        <span class="badge bg-dark text-light">Outputs: </span>
-                        <span class="badge bg-light">Enrichment analysis results & plots for each cluster</span>
-                    </div>
-
-                </div>
-
-                <!-- ===================== -->
-
-                <div class="pipeline-step-card">
+                <div class="pipeline-step-card step-extension">
 
                     <div class="pipeline-sep text-center">
                         <i class="fa fa-arrow-down" aria-hidden="true"></i>
@@ -247,18 +253,21 @@
                     <div class="alert alert-dark pipeline-step" role="alert">
                         <span class="badge bg-dark text-light">Inputs: </span>
                         <span class="badge bg-light">DEA results on each cluster</span>
-                        <span class="badge bg-light">Trajectory analysis settings</span>
+
+                        <div class="step-dependecies">
+                            <span class="badge bg-dark text-light">Dependecies: </span>
+                            <span class="badge bg-light">Clustering & Finding Markers</span>
+                        </div>
+
                         <hr>
 
                         <div>
 
                         <!-- pipe-line step buttons -->
                         <div class="pipline-step-btns text-right">
-                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Add Extension</button>
+                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
                             <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                            <button class="btn-step-down btn-sm"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-                            <button class="btn-step-up btn-sm"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
                         </div>
                         <!-- / pipe-line step buttons -->
 
@@ -279,48 +288,136 @@
 
                 </div>
 
+                <!-- ===================== -->
 
+                <div class="pipeline-step-card step-core">
+
+                    <div class="pipeline-sep text-center">
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div class="alert alert-success pipeline-step" role="alert">
+                        <span class="badge bg-dark text-light">Inputs: </span>
+                        <span class="badge bg-light">DEA results of clusters</span>
+                        <hr>
+
+                        <!-- pipe-line step buttons -->
+                        <div class="pipline-step-btns text-right">
+                            <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
+                            <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
+                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
+                        </div>
+                        <!-- / pipe-line step buttons -->
+
+                        <p class="font-weight-bold">Pathway analysis<br /><span class="badge bg-dark text-light">Core <i class="fa fa-cube" aria-hidden="true"></i></span></p>
+                        <ul>
+                            <li>EnrichR is used for this analysis</li>
+                        </ul>
+                        <hr>
+                        <span class="badge bg-dark text-light">Outputs: </span>
+                        <span class="badge bg-light">Enrichment analysis results & plots for each cluster</span>
+                    </div>
+
+                </div>
+
+                <!-- Hidden extension template -->
+                <div id="extension-template" class="d-none">
+
+                    <!-- ===================== -->
+
+                    <div class="pipeline-step-card step-extension">
+
+                        <div class="pipeline-sep text-center">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </div>
+
+                        <div id="step-id-place-holder" class="alert alert-dark pipeline-step" role="alert">
+                            <div class="step-inputs">
+                                <span class="badge bg-dark text-light">Inputs: </span>
+                                <!--<span class="badge bg-light step-input"></span>-->
+                            </div>
+
+
+                            <div class="step-dependecies">
+                                <span class="badge bg-dark text-light">Dependecies: </span>
+                                <!--<span class="badge bg-light step-dependecy"></span>-->
+                            </div>
+
+                            <hr>
+
+                            <div>
+
+                            <!-- pipe-line step buttons -->
+                            <div class="pipline-step-btns text-right">
+                                <button type="button" class="btn-add-extension btn btn-warning font-weight-bold"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
+                                <button type="button" class="btn-step-settings btn btn-info font-weight-bold"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
+                                <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
+                            </div>
+                            <!-- / pipe-line step buttons -->
+
+                                <span class="font-weight-bold step-title"></span><br />
+                                <span class="badge badge-extension bg-warning text-dark">EXTENSION <i class="fa fa-cog" aria-hidden="true"></i></span>
+
+
+                            </div>
+
+                            <ul class="step-summary">
+
+                            </ul>
+                            <hr>
+                            <div class="step-outputs">
+                                <span class="badge bg-dark text-light">Outputs: </span>
+                                <!--<span class="badge bg-light step-output"></span>-->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- / Hidden extension template -->
 
             </div>
 
             <!-- / Pipeline wrapper -->
 
-            <div class="col-6">
-                <h3>misc:</h3>
-                <ul>
-                    <li>Set idents</li>
-                    <li>Merge data (Merge 2 Seurat objects)</li>
-                    <li>Add meta data
-                        <ul>
-                            <li>By cell ID</li>
-                            <li>By Ident</li>
-                            <li>By other meta data</li>
-                        </ul>
-                    </li>
-                </ul>
+            <div id="right-panel" class="col-6">
+                <div style="position: fixed; top: 15px; right: 30px; border: 2px solid black; width: 620px; height: 590px; padding: 15px; border-radius: 1%; background-color: #f7f4f4">
+                    <h3>misc:</h3>
+                    <ul>
+                        <li>Set idents</li>
+                        <li>Merge data (Merge 2 Seurat objects)</li>
+                        <li>Add meta data
+                            <ul>
+                                <li>By cell ID</li>
+                                <li>By Ident</li>
+                                <li>By other meta data</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                <h3>Trajectory Analysis:</h3>
-                <ul>
-                    <li>Routine trajectory analysis</li>
-                    <li>Find precursor cells</li>
-                </ul>
+                    <h3>Trajectory Analysis:</h3>
+                    <ul>
+                        <li>Routine trajectory analysis</li>
+                        <li>Find precursor cells</li>
+                    </ul>
 
-                <h3>Post-DEA analysis:</h3>
-                <ul>
-                    <li>Pathway analysis</li>
-                    <li>GO Enrichment analysis</li>
-                        <ul>
-                            <li>Biological process</li>
-                            <li>Cellular component</li>
-                            <li>Molecular function</li>
-                        </ul>
-                </ul>
+                    <h3>Post-DEA analysis:</h3>
+                    <ul>
+                        <li>Pathway analysis</li>
+                        <li>GO Enrichment analysis</li>
+                            <ul>
+                                <li>Biological process</li>
+                                <li>Cellular component</li>
+                                <li>Molecular function</li>
+                            </ul>
+                    </ul>
 
-                <h3>Advanced:</h3>
-                <ul>
-                    <li>Cell-Cell Communication</li>
-                </ul>
-
+                    <h3>Advanced:</h3>
+                    <ul>
+                        <li>Cell-Cell Communication</li>
+                    </ul>
+                </div>
             </div>
 
         </div>

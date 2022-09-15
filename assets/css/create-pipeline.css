@@ -10,6 +10,13 @@
     margin-bottom: 10px;
 }
 
+.step-core .btn-step-del {
+    /* disable delete button for a core step */
+    pointer-events: none;
+    opacity: .45;
+    /* / disable delete button for a core step */
+}
+
 .pipeline-sep {
     margin-bottom: 10px;;
 }
@@ -20,4 +27,7 @@
     min-width: 20px;
     padding: 2px;
     border-width: 1px;
+}
+
+#right-panel {
 }
