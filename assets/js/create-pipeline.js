@@ -6,8 +6,27 @@ $(document).ready(function() {
 });
 
 $(document).on('click', '.btn-step-del', function() {
-    //find pipeline-step-card
-    $(this).closest('.pipeline-step-card').remove();
+
+    let element = this;
+
+    $.confirm({
+        title: 'Sure?',
+        content: 'Are you sure you want to remove this extension?',
+        buttons: {
+            Yes: function () {
+
+                //find pipeline-step-card
+                $(element).closest('.pipeline-step-card').remove();
+
+                $.alert('Extension removed!');
+            },
+            Cancel: function () {
+                $.alert('Canceled!');
+            }
+        }
+    });
+
+
 });
 
 
