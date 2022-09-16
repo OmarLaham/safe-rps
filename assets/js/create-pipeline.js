@@ -10,11 +10,38 @@ $(document).on('click', '.btn-step-del', function() {
     $(this).closest('.pipeline-step-card').remove();
 });
 
-$(document).on("click", ".btn-add-extension" , function() {
+
+
+//========================== Adding extensions =========================
+
+//list of exts. added to current pipeline
+var ext_pipe = []
+
+//dict of exts. available to add (could have already been added or not)
+var ext_available = {
+    "Extension A": {
+        "added": false,
+        "dependencies": ["clustering-and-finding-markers"]
+    }
+}
+
+var ext_add_after = "";
+
+$('#modal-add-extension').on('shown.bs.modal', function () {
+
+});
+
+$(document).on('click', '.btn-follow-by-extension', function() {
+    //find pipeline-step-card
+    ext_add_after = $(this).closest('.pipeline-step').attr("id");
+});
+
+$("#btn-add-extension").click(function() {
+
     //get extension template html
     var ext_html = $('#extension-template').html();
 
-    let ext_title = "Extension A"
+    let ext_title = "Extension A";
     let ext_id = "step-" + ext_title.replace(" ", "-").toLowerCase();
 
     let ext_inputs = ["inp1", "inp2"];
@@ -26,7 +53,7 @@ $(document).on("click", ".btn-add-extension" , function() {
     ext_html = ext_html.replace("step-id-place-holder", ext_id);
 
     //add card
-    $(this).closest('.pipeline-step-card').after(ext_html);
+    $("#" + ext_add_after).closest('.pipeline-step-card').after(ext_html);
 
     //set title
     $('#' + ext_id + " .step-title").html(ext_title);
@@ -51,4 +78,9 @@ $(document).on("click", ".btn-add-extension" , function() {
         $('#' + ext_id + " .step-outputs").append(html);
     }
 
+    $('#modal-add-extension').modal('hide');
+
 });
+
+//========================== / Adding extensions =========================
+
