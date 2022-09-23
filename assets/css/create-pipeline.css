@@ -31,3 +31,15 @@
 
 #right-panel {
 }
+
+#right-panel-inner {
+    position: fixed;
+    top: 15px;
+    bottom: 15px;
+    right: 30px;
+    width: 50%;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 1%;
+    background-color: #f7f4f4;
+}

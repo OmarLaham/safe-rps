@@ -289,36 +289,6 @@
 
                 <!-- ===================== -->
 
-                <div class="pipeline-step-card step-core">
-
-                    <div class="pipeline-sep text-center">
-                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                    </div>
-
-                    <div id="step-pathway-analysis" class="alert alert-success pipeline-step" role="alert">
-                        <span class="badge bg-dark text-light">Inputs: </span>
-                        <span class="badge bg-light">DEA results of clusters</span>
-                        <hr>
-
-                        <!-- pipe-line step buttons -->
-                        <div class="pipline-step-btns text-right">
-                            <button type="button" class="btn-follow-by-extension btn btn-warning font-weight-bold" data-toggle="modal" data-target="#modal-add-extension"><i class="fa fa-plus" aria-hidden="true"></i> Follow by Extension</button>
-                            <button type="button" class="btn-step-settings btn btn-info font-weight-bold" data-toggle="modal" data-target="#modal-settings"><i class="fa fa-wrench" aria-hidden="true"></i> Settings</button>
-                            <button class="btn-step-del btn-sm"><i class="fa fa-times" aria-hidden="true"></i> Remove</button>
-                        </div>
-                        <!-- / pipe-line step buttons -->
-
-                        <p class="font-weight-bold">Pathway analysis<br /><span class="badge bg-dark text-light">Core <i class="fa fa-cube" aria-hidden="true"></i></span></p>
-                        <ul>
-                            <li>EnrichR is used for this analysis</li>
-                        </ul>
-                        <hr>
-                        <span class="badge bg-dark text-light">Outputs: </span>
-                        <span class="badge bg-light">Enrichment analysis results & plots for each cluster</span>
-                    </div>
-
-                </div>
-
                 <!-- Hidden extension template -->
                 <div id="extension-template" class="d-none">
 
@@ -381,41 +351,12 @@
             <!-- / Pipeline wrapper -->
 
             <div id="right-panel" class="col-6">
-                <div style="position: fixed; top: 15px; right: 30px; border: 2px solid black; width: 620px; height: 590px; padding: 15px; border-radius: 1%; background-color: #f7f4f4">
-                    <h3>misc:</h3>
-                    <ul>
-                        <li>Set idents</li>
-                        <li>Merge data (Merge 2 Seurat objects)</li>
-                        <li>Add meta data
-                            <ul>
-                                <li>By cell ID</li>
-                                <li>By Ident</li>
-                                <li>By other meta data</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div id="right-panel-inner" class="">
 
-                    <h3>Trajectory Analysis:</h3>
-                    <ul>
-                        <li>Routine trajectory analysis</li>
-                        <li>Find precursor cells</li>
-                    </ul>
+                    <h3 class="text-center">Build & Customize your Pipeline!</h3>
 
-                    <h3>Post-DEA analysis:</h3>
-                    <ul>
-                        <li>Pathway analysis</li>
-                        <li>GO Enrichment analysis</li>
-                            <ul>
-                                <li>Biological process</li>
-                                <li>Cellular component</li>
-                                <li>Molecular function</li>
-                            </ul>
-                    </ul>
 
-                    <h3>Advanced:</h3>
-                    <ul>
-                        <li>Cell-Cell Communication</li>
-                    </ul>
+
                 </div>
             </div>
 
@@ -435,10 +376,9 @@
                 </button>
               </div>
               <div class="modal-body">
-                <p>Modal body text goes here.</p>
-                  <input type="radio" name="rdo-add-ext-names" value="Extension A"> Extension A<br />
-                  <input type="radio" name="rdo-add-ext-names" value="Extension B"> Extension B<br />
-                  <input type="radio" name="rdo-add-ext-names" value="Extension C"> Extension C
+                <div id="modal-ext-lst">
+                    extensions go here..
+                </div>
               </div>
               <div class="modal-footer">
                 <button id="btn-add-extension" type="button" class="btn btn-primary">Add Extension</button>
@@ -460,10 +400,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
-              <input type="radio" name="rdo-add-ext-names" value="Extension A"> Extension A<br />
-              <input type="radio" name="rdo-add-ext-names" value="Extension B"> Extension B<br />
-              <input type="radio" name="rdo-add-ext-names" value="Extension C"> Extension C
+              settings go here..
           </div>
           <div class="modal-footer">
             <button id="btn-save-settings" type="button" class="btn btn-primary">Save Settings</button>
