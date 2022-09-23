@@ -400,7 +400,76 @@
             </button>
           </div>
           <div class="modal-body">
-              settings go here..
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Setting</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Find neighbours dims:</th>
+                  <td>
+                      <input type="text" class="form-control" placeholder="1:20" aria-label="Find neighbours dims">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Find clusters resolution:</th>
+                  <td>
+                      <input type="text" class="form-control" placeholder="0.8" aria-label="Find clusters resolution">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Dimensionality reduction plot(s):</th>
+                  <td>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Please select
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">UMAP & tSNE</a>
+                        <a class="dropdown-item" href="#">UMAP</a>
+                        <a class="dropdown-item" href="#">tSNE</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Find markers min.pct:</th>
+                  <td>
+                      <input type="text" class="form-control" placeholder="0.25" aria-label="Find markers min.pct">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Find markers logfc.threshold:</th>
+                  <td>
+                      <input type="text" class="form-control" placeholder="0.25" aria-label="Find markers logfc.threshold">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Generate feature plot for features:</th>
+                  <td>
+                      <input type="text" class="form-control" placeholder="MS4A1, GNLY, CD3E" aria-label="Generate feature plot for features">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Generate expression heatmap?</th>
+                  <td>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Please select
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Yes</a>
+                        <a class="dropdown-item" href="#">No</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
           </div>
           <div class="modal-footer">
             <button id="btn-save-settings" type="button" class="btn btn-primary">Save Settings</button>

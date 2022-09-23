@@ -66,7 +66,7 @@ var ext_available = {
         "title": "Cell-Cell Communication",
         "added": false,
         "inputs": ['DEA results'],
-        "dependencies": ["clustering-and-finding-markers", "Extension X"],
+        "dependencies": ["clustering-and-finding-markers", "extension-x"],
         "summary": "<ul><li>Root cells automatically detected</li><li>Pseudotime trajectory analysis</li></ul>",
         "outputs": ["Aggregated cell-cell communication network", "Single and overall visualization for the aggregated cell-cell communication network"]
     }
@@ -90,7 +90,7 @@ $('#modal-add-extension').on('shown.bs.modal', function () {
             var missing_dependencies = [];
             for (let i = 0; i < dependencies.length; i++) {
                 if(ext_pipe.includes(dependencies[i]) === false) {
-                    missing_dependencies.push("<span class='badge bg-light'>" + dependencies[i] + "</span>");
+                    missing_dependencies.push("<span class='badge bg-light'>" + ext_available[dependencies[i]]["title"] + "</span>");
 
                 }
             }
@@ -129,7 +129,7 @@ $("#btn-add-extension").click(function() {
     var ext_html = $('#extension-template').html();
 
     //get id of added extension
-    let ext_id = $("input[name=rdo-add-ext-names]").val();
+    let ext_id = $("input[name=rdo-add-ext-names]:checked").val();
 
     let ext_title = ext_available[ext_id]["title"];
     let ext_inputs = ext_available[ext_id]["inputs"];
@@ -165,6 +165,9 @@ $("#btn-add-extension").click(function() {
         let html = "<span class=\"badge bg-light step-input\">" + ext_outputs[i] + "</span>&nbsp;";
         $('#' + ext_id + " .step-outputs").append(html);
     }
+
+    //TOOD: better to add in correct order to allow following by extensions only in the correct place
+    ext_pipe.push(ext_id);
 
     $('#modal-add-extension').modal('hide');
 
