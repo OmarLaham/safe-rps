@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>CliniConf | Home</title>
+    <title>CliniCloud | Home</title>
     
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -117,8 +117,8 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="header-hero-content">
-                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Your</b> <span>Secure</span> Cloud for <br /><b>Clinical Research.</b></h1>
-                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">With CliniConf&copy; you process all your sensitive research data with full privacy.</p>
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Your <span>Clinical</span> <b>Cloud</b><br />for Research & Industry.</h1>
+                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">We provide you with the <strong>secure</strong> cloud with all the <strong>tools</strong> you need to get your work done!</p>
                             <div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                                 <form action="hello.3ccloud@gmail.com" method="post" enctype="text/plain">
                                     <input type="text" placeholder="username@yourdomain.com">
@@ -147,7 +147,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h3 class="title welcome font-weight-bold">CONFIDENTIAL RESEARCH Cloud</h3>
+                        <h3 class="title welcome font-weight-bold">CONFIDENTIAL Computing Cloud</h3>
                         <h4 class="font-weight-normal"><span class="font-weight-bold">With Confidential Computing Technology</span> you can finally upload and process your data securely.</h4>
                         <br />
                         <h4><span class="font-weight-bold">Even our servers admins can NOT access your data in process & rest!</span></h4>
@@ -219,8 +219,8 @@
     <section id="services" class="our-services-area pt-115">
         <div class="container">
             <div class="header-hero-content text-center">
-                <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>A Bunch of</b> <span>Pipelines & Extensions</span></b></h1>
-                <p class="h4">Our cloud is made for great scientists like you!<br />It's is equipped with many tools to conduct your analysis faster, easier and 100% secure</p>
+                    <h2 class="hero-title wow fadeInUp" style="font-size: 40px;" data-wow-duration="1s" data-wow-delay="0.2s"><b>A </b><span>Tool Store</span></b> that you <span><i class="fa fa-heart-o"></i> </span></h2>
+                <p class="h4">Our cloud is made for great scientists like you!<br />It's is equipped with many tools to conduct your analysis faster, easier and 100% secure.</p>
 
                 <div class="about-counter pt-60">
                     <div class="row">
@@ -292,7 +292,7 @@
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
                                         <div class="counter-content media-body">
-                                            <h6 class="text-center">Save private servers <span class="text-danger font-weight-bold">budget</span>!</h6>
+                                            <h6 class="text-center">Save <span class="text-danger font-weight-bold">budget</span> on <br />servers and SysAdmins!</h6>
                                             <!--<p class="text">Clients</p>-->
                                         </div>
                                     </div> <!-- single counter -->
@@ -348,7 +348,7 @@
                                         </div>
                                         <div class="counter-content media-body">
 
-                                            <h6 class="text-center"><span class="text-danger font-weight-bold">Pre-installed</span> tools</h6>
+                                            <h6 class="text-center"><span class="text-danger font-weight-bold">Fully Equipped</span> Tool Store</h6>
 
                                             <!--<p class="text">Satisfaction</p>-->
                                         </div>
@@ -499,7 +499,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h6 class="title text-danger">Tesimotional</h6>
+                        <h6 class="title text-danger">Letters of Intent</h6>
                         <h4 class="title"><span class="text-danger">Professors</span> Say About Us ;)</h4>
                     </div> <!-- section title -->
                 </div>
@@ -572,7 +572,7 @@
                 <div class="col-lg-9">
                     <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                         <h3 class="title welcome font-weight-bold">Willing for 3 Minutes of Support? =)</h3>
-                        <h4 class="font-weight-normal"><span class="font-weight-bold">We Are Sure You are Generous</span>.<br />We Just Hope You Have <span class="font-weight-bold">3 Minutes</span> that Makes Great Difference</h4>
+                        <h4 class="font-weight-normal"><span class="font-weight-bold">We Are Sure You are Generous!</span><br />Will you give us <span class="font-weight-bold">3 Minutes</span> that Make Great Difference?</h4>
 
                     </div>
                 </div>
@@ -613,7 +613,7 @@
                                 <i class="lni-envelope"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">hello.3ccloud@gmail.com</p>
+                                <p class="text">hello@clinicloud.com</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
