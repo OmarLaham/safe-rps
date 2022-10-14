@@ -156,7 +156,7 @@
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-image mt-60 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="about-image mt-60 wow fadeIn text-center" data-wow-duration="1s" data-wow-delay="0.5s">
                         <img src="assets/images/about.png" alt="about">
                     </div> <!-- about image -->
                 </div>
@@ -291,7 +291,8 @@
 <!--                                            <span class="shape-1"></span>-->
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
-                                        <div class="counter-content media-body">
+                                        <div class="counter-content media-body text-center">
+                                            <img width="136" heigh="136" src="assets/images/why-us-save-budget.png" alt="save-budget" />
                                             <h6 class="text-center">Save <span class="text-danger font-weight-bold">budget</span> on <br />servers and SysAdmins!</h6>
                                             <!--<p class="text">Clients</p>-->
                                         </div>
@@ -303,7 +304,8 @@
 <!--                                            <span class="shape-1"></span>-->
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
-                                        <div class="counter-content media-body">
+                                        <div class="counter-content media-body text-center">
+                                            <img width="136" heigh="135.5" src="assets/images/why-us-pay-as-you-go.png" alt="pay-as-you-go" />
                                             <h6 class="text-center"><span class="text-danger font-weight-bold">Pay as you go</span>!</h6>
 
                                             <!--<p class="text">Satisfaction</p>-->
@@ -316,7 +318,8 @@
 <!--                                            <span class="shape-1"></span>-->
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
-                                        <div class="counter-content media-body">
+                                        <div class="counter-content media-body text-center">
+                                            <img width="136" heigh="136" src="assets/images/why-use-care-of-servers.png" alt="care-of-servers" />
                                             <h6 class="text-center">we take <span class="text-danger font-weight-bold">care</span> of all servers!</h6>
 
                                             <!--<p class="text">Projects</p>-->
@@ -333,7 +336,8 @@
 <!--                                            <span class="shape-1"></span>-->
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
-                                        <div class="counter-content media-body">
+                                        <div class="counter-content media-body text-center">
+                                            <img width="136" heigh="136" src="assets/images/why-us-highest-privacy.png" alt="highest-privacy" />
                                             <h6 class="text-center">Highest level of <span class="text-danger font-weight-bold">Privacy</span></h6>
 
                                             <!--<p class="text">Clients</p>-->
@@ -346,9 +350,9 @@
 <!--                                            <span class="shape-1"></span>-->
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
-                                        <div class="counter-content media-body">
-
-                                            <h6 class="text-center"><span class="text-danger font-weight-bold">Fully Equipped</span> Tool Store</h6>
+                                        <div class="counter-content media-body text-center">
+                                            <img width="136" heigh="136" src="assets/images/why-us-tool-store.png" alt="tool-store" />
+                                            <h6 class="text-center">Our <span class="text-danger font-weight-bold">Tool Store</span></h6>
 
                                             <!--<p class="text">Satisfaction</p>-->
                                         </div>
@@ -360,7 +364,8 @@
 <!--                                            <span class="shape-1"></span>-->
 <!--                                            <span class="shape-2"></span>-->
                                         </div>
-                                        <div class="counter-content media-body">
+                                        <div class="counter-content media-body text-center">
+                                            <img width="136" heigh="136" src="assets/images/why-us-higher-collaboration.png" alt="highest-collaboration" />
                                             <h6 class="text-center">Higher scientific <span class="text-danger font-weight-bold">Collaboration</span></h6>
                                             <!--<p class="text">Projects</p>-->
                                         </div>
@@ -505,11 +510,38 @@
                 </div>
             </div> <!-- row -->
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="blog-image">
-                            <a href="blog-details.html"><img height="210" src="assets/images/uni-goethe.jpg" alt="news"></a>
+                            <a href="blog-details.html"><img src="assets/images/uni-goethe.jpg" alt="news"></a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <div class="blog-image">
+                            <a href="blog-details.html"><img src="assets/images/uni-saarland.jpg" alt="news"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="blog-image">
+                            <a href="blog-details.html"><img src="assets/images/uni-heidelber.jpg" alt="news"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-8">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.9s">
+                        <div class="blog-image">
+                            <a href="blog-details.html"><img src="assets/images/dkfz.jpg" alt="news"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.2s">
                         <div class="blog-content">
                             <div class="blog-author d-flex align-items-center">
                                 <div class="author-image">
@@ -518,16 +550,14 @@
                                 <div class="author-content media-body">
                                     <h6 class="title font-weight-bold">Prof. Dr. Jochen Triesch</h6>
                                     <h4 class="sub-title text-danger">Frankfurt Institute for Advanced Studies</h4>
+                                    <a href="#" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- single blog -->
+                    </div> <!-- single LOI -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.7s">
-                        <div class="blog-image">
-                            <a href="blog-details.html"><img height="210" src="assets/images/uni-saarland.svg" alt="news"></a>
-                        </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.5s">
                         <div class="blog-content">
                             <div class="blog-author d-flex align-items-center">
                                 <div class="author-image">
@@ -536,28 +566,27 @@
                                 <div class="author-content media-body">
                                     <h6 class="title font-weight-bold">Prof. Dr. Hans-Peter Lenhof</h6>
                                     <h4 class="sub-title text-danger">Head of Bioinformatics Faculty</h4>
+                                    <a href="#" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- single blog -->
+                    </div> <!-- single LOI -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="blog-image">
-                            <a href="blog-details.html"><img height="210" src="assets/images/uni-heidelber.jpg" alt="news"></a>
-                        </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.8s">
                         <div class="blog-content">
                             <div class="blog-author d-flex align-items-center">
                                 <div class="author-image">
-                                    <img src="assets/images/prof.dr.philipp_koch.jpeg" alt="author">
+                                    <img src="assets/images/prof.dr.philipp_koch.jpg" alt="author">
                                 </div>
                                 <div class="author-content media-body">
                                     <h4 class="title font-weight-bold">Prof. Dr. Philipp Koch</h4>
                                     <h6 class="sub-title text-danger">HECTOR Institute for Translational Brain Research</h6>
+                                    <a href="#" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- single blog -->
+                    </div> <!-- single LOI -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
