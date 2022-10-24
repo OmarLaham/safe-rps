@@ -509,34 +509,36 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="blog-image">
-                            <a href="blog-details.html"><img src="assets/images/uni-goethe.jpg" alt="news"></a>
+                            <a href="javascript:;"><img src="assets/images/uni-goethe.jpg" alt="news"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.7s">
                         <div class="blog-image">
-                            <a href="blog-details.html"><img src="assets/images/uni-saarland.jpg" alt="news"></a>
+                            <a href="javascript:;"><img src="assets/images/uni-saarland.jpg" alt="news"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="blog-image">
-                            <a href="blog-details.html"><img src="assets/images/uni-heidelber.jpg" alt="news"></a>
+                            <a href="javascript:;"><img src="assets/images/uni-heidelber.jpg" alt="news"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-8">
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.9s">
                         <div class="blog-image">
-                            <a href="blog-details.html"><img src="assets/images/dkfz.jpg" alt="news"></a>
+                            <a href="javascript:;"><img src="assets/images/dkfz.jpg" alt="news"></a>
                         </div>
                     </div>
                 </div>
             </div> <!-- row -->
+            
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-6">
+                	<!-- Professors
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.2s">
                         <div class="blog-content">
                             <div class="blog-author d-flex align-items-center">
@@ -550,7 +552,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- single LOI -->
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.5s">
@@ -566,7 +568,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- single LOI -->
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.8s">
@@ -582,7 +584,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- single LOI -->
+                    </div>  / Professors -->
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
@@ -591,6 +593,7 @@
     <!--====== BLOG PART ENDS ======-->
 
     <!--====== Questionnaire ========-->
+    <!--
     <section id="questionnaire" class="questionnaire-area pt-120 pb-120">
         <div class="container">
             <div class="row justify-content-center">
@@ -601,16 +604,17 @@
 
                     </div>
                 </div>
-            </div> <!-- row -->
+            </div>
             <br /><br />
             <div class="row justify-content-center">
                 <a class="main-btn" href="#link-to-questionnaire">Kindly Take our Questionnaire!</a>
             </div>
         </div>
     </section>
+    -->	
     <!--====== CONTACT PART START ======-->
 
-    <section id="contact" data-scroll-index="0" class="contact-area pt-0 pb-120">
+    <section id="contact" data-scroll-index="0" class="contact-area mt-50 pb-120">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4">
