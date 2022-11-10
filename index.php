@@ -95,7 +95,7 @@
                                         <a href="index.php/#why-us">Why Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.php/#blog">Testimonial</a>
+                                        <a href="index.php/#blog">Letters of Intent</a>
                                     </li>
 <!--                                    <li class="nav-item">-->
 <!--                                        <a href="index.php/#pricing">Pricing</a>-->
@@ -295,10 +295,10 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-1 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                                        <div class="counter-shape">
-<!--                                            <span class="shape-1"></span>-->
-<!--                                            <span class="shape-2"></span>-->
-                                        </div>
+                                        <!--<div class="counter-shape">
+<!                                            <span class="shape-1"></span>
+<!                                            <span class="shape-2"></span>
+                                        </div>-->
                                         <div class="counter-content media-body text-center">
                                             <img src="assets/images/why-us-save-budget.png" alt="save-budget" />
                                             <h6 class="text-center">Save <span class="text-danger font-weight-bold">budget</span> on <br />servers and SysAdmins!</h6>
@@ -308,10 +308,10 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-2 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                                        <div class="counter-shape">
-<!--                                            <span class="shape-1"></span>-->
-<!--                                            <span class="shape-2"></span>-->
-                                        </div>
+                                        <!--<div class="counter-shape">
+<!                                            <span class="shape-1"></span>
+<!                                            <span class="shape-2"></span>
+                                        </div>-->
                                         <div class="counter-content media-body text-center">
                                             <img src="assets/images/why-us-pay-as-you-go.png" alt="pay-as-you-go" />
                                             <h6 class="text-center"><span class="text-danger font-weight-bold">Pay as you go</span>!</h6>
@@ -322,10 +322,10 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-3 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
-                                        <div class="counter-shape">
-<!--                                            <span class="shape-1"></span>-->
-<!--                                            <span class="shape-2"></span>-->
-                                        </div>
+                                        <!--<div class="counter-shape">
+<!                                           <span class="shape-1"></span>
+<!                                           <span class="shape-2"></span>
+                                        </div>-->
                                         <div class="counter-content media-body text-center">
                                             <img src="assets/images/why-use-care-of-servers.png" alt="care-of-servers" />
                                             <h6 class="text-center">we take <span class="text-danger font-weight-bold">care</span> of all servers!</h6>
@@ -340,10 +340,10 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-1 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
-                                        <div class="counter-shape">
-<!--                                            <span class="shape-1"></span>-->
-<!--                                            <span class="shape-2"></span>-->
-                                        </div>
+                                        <!--<div class="counter-shape">
+<!                                            <span class="shape-1"></span>
+<!                                            <span class="shape-2"></span>
+                                        </div>-->
                                         <div class="counter-content media-body text-center">
                                             <img src="assets/images/why-us-highest-privacy.png" alt="highest-privacy" />
                                             <h6 class="text-center">Highest level of <span class="text-danger font-weight-bold">Privacy</span></h6>
@@ -354,10 +354,10 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-2 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
-                                        <div class="counter-shape">
-<!--                                            <span class="shape-1"></span>-->
-<!--                                            <span class="shape-2"></span>-->
-                                        </div>
+                                        <!--<div class="counter-shape">
+<!                                            <span class="shape-1"></span>
+<!                                            <span class="shape-2"></span>
+                                        </div>-->
                                         <div class="counter-content media-body text-center">
                                             <img src="assets/images/why-us-tool-store.png" alt="tool-store" />
                                             <h6 class="text-center">Our <span class="text-danger font-weight-bold">Tool Store</span></h6>
@@ -368,10 +368,10 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-3 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.8s">
-                                        <div class="counter-shape">
-<!--                                            <span class="shape-1"></span>-->
-<!--                                            <span class="shape-2"></span>-->
-                                        </div>
+                                        <!--<div class="counter-shape">
+<!                                            <span class="shape-1"></span>
+<!                                            <span class="shape-2"></span>
+                                        </div>-->
                                         <div class="counter-content media-body text-center">
                                             <img src="assets/images/why-us-higher-collaboration.png" alt="highest-collaboration" />
                                             <h6 class="text-center">Higher scientific <span class="text-danger font-weight-bold">Collaboration</span></h6>
@@ -504,41 +504,10 @@
                         <h4 class="title"><span class="text-danger">Professors</span> Say About Us ;)</h4>
                     </div> <!-- section title -->
                 </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="blog-image">
-                            <a href="javascript:;"><img src="assets/images/uni-goethe.jpg" alt="news"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.7s">
-                        <div class="blog-image">
-                            <a href="javascript:;"><img src="assets/images/uni-saarland.jpg" alt="news"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="blog-image">
-                            <a href="javascript:;"><img src="assets/images/uni-heidelber.jpg" alt="news"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.9s">
-                        <div class="blog-image">
-                            <a href="javascript:;"><img src="assets/images/dkfz.jpg" alt="news"></a>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- row -->
-            
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                	<!-- Professors
+
                     <div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.2s">
                         <div class="blog-content">
                             <div class="blog-author d-flex align-items-center">
@@ -548,7 +517,8 @@
                                 <div class="author-content media-body">
                                     <h6 class="title font-weight-bold">Prof. Dr. Jochen Triesch</h6>
                                     <h4 class="sub-title text-danger">Frankfurt Institute for Advanced Studies<br/>Head of Institute</h4>
-                                    <a href="#" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
+                                    <h4 class="sub-title text-danger">Goethe-Universität Frankfurt</h4>
+                                    <a target="_blank" href="/lois/loi_prof_triesch.pdf" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
                             </div>
                         </div>
@@ -559,12 +529,13 @@
                         <div class="blog-content">
                             <div class="blog-author d-flex align-items-center">
                                 <div class="author-image">
-                                    <img src="assets/images/prof.dr.hans-peter_lenhof.jpg" alt="author">
+                                    <img src="assets/images/prof.dr.volkhard_helms.png" alt="author">
                                 </div>
                                 <div class="author-content media-body">
-                                    <h6 class="title font-weight-bold">Prof. Dr. Hans-Peter Lenhof</h6>
-                                    <h4 class="sub-title text-danger">The University of Saarland<br />Head of Bioinformatics Faculty</h4>
-                                    <a href="#" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
+                                    <h6 class="title font-weight-bold">Prof. Dr. Volkhard Helms</h6>
+                                    <h4 class="sub-title text-danger">Head of Computational Biology Department</h4>
+                                    <h4 class="sub-title text-danger">The University of Saarland</h4>
+                                    <a target="_blank" href="/lois/loi_prof_helms.pdf" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
                             </div>
                         </div>
@@ -578,13 +549,14 @@
                                     <img src="assets/images/prof.dr.philipp_koch.jpg" alt="author">
                                 </div>
                                 <div class="author-content media-body">
-                                    <h6 class="title font-weight-bold">Prof. Dr. Philipp Koch</h4>
-                                    <h6 class="sub-title text-danger">HECTOR Institute - Translational Brain Research<br/>Professor & Group Leader</h6>
-                                    <a href="#" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
+                                    <h6 class="title font-weight-bold">Prof. Dr. Philipp Koch</h6>
+                                    <h6 class="sub-title text-danger">HECTOR Institute - Translational Brain Research</h6>
+                                    <h6 class="sub-title text-danger">Heidelberg University</h6>
+                                    <a target="_blank" href="/lois/loi_prof_koch.pdf" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
                             </div>
                         </div>
-                    </div>  / Professors -->
+                    </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
@@ -642,7 +614,7 @@
                                 <i class="lni-envelope"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">hello@clinicloud.com</p>
+                                <p class="text">contact@clinicloud-io.com</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -664,7 +636,7 @@
                     <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <h4 class="contact-title pb-10"><i class="lni-envelope"></i> Leave <span>A Message.</span></h4>
                         
-                        <form id="hello.3ccloud@gmail.com" action="assets/contact.php" method="post">
+                        <form id="contact@clinicloud-io.com" action="assets/contact.php" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="contact-form mt-45">
@@ -747,7 +719,7 @@
                             <div class="contact pt-10">
                                 <p class="text">J2 Square </br>
                                     Mannheim, 68159 Germany.</p>
-                                <p class="text">hello.3ccloud@gmail.com</p>
+                                <p class="text">contact@clinicloud-io.com</p>
                                 <p class="text">+49 177 2115 4445</p>
 
                                 <ul class="social mt-40">
