@@ -614,7 +614,7 @@
                                 <i class="lni-envelope"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">hello@clinicloud-io.com</p>
+                                <p class="text"><a href="mailto:hello@clinicloud-io.com">hello@clinicloud-io.com</a></p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
