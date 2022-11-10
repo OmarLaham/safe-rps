@@ -624,8 +624,8 @@
                                 <i class="lni-phone"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">+49 177 2115 4445</p>
                                 <p class="text">+49 151 2353 4638</p>
+                                <p class="text">+49 176 3452 4288</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
