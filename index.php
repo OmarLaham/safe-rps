@@ -516,7 +516,7 @@
                                 </div>
                                 <div class="author-content media-body">
                                     <h6 class="title font-weight-bold">Prof. Dr. Jochen Triesch</h6>
-                                    <h4 class="sub-title text-danger">Frankfurt Institute for Advanced Studies<br/>Holder of the Johanna Quandt Chair for theoretical science</h4>
+                                    <h4 class="sub-title text-danger">Frankfurt Institute for Advanced Studies<br/>Holder of the Johanna Quandt Chair for Theoretical Life Sciences</h4>
                                     <!--<h4 class="sub-title text-danger">Goethe-Universität Frankfurt</h4>-->
                                     <a target="_blank" href="/lois/loi_prof_triesch.pdf" class="text-secondary">(<i class="fa fa-search"></i> Show Letter of Intent)</a>
                                 </div>
